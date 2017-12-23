@@ -44,7 +44,7 @@ get-git-info() {
     git diff --quiet --ignore-submodules --exit-code HEAD > /dev/null 2>&1
     
     if [[ "$?" != "0" ]]; then
-      git_symbols="❗ "
+      git_symbols="⚠️ "
       back_color=$3
     else
       back_color=$2
